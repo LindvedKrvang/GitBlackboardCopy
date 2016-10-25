@@ -14,7 +14,7 @@ public abstract class Animal
     private int amountOfLegs;
     private String gender;
     
-    public Animal(String gender, int amountOfLegs, String sound)
+    public Animal(String gender, int amountOfLegs)
     {
         this.gender = gender;
         this.amountOfLegs = amountOfLegs;
@@ -22,4 +22,9 @@ public abstract class Animal
     }
     
     public abstract void makeSound();
+    
+    public String getGender()
+    {
+        return gender;
+    }
 }

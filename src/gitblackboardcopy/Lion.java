@@ -15,14 +15,14 @@ public class Lion extends Animal
 
     public Lion(String gender, int amountOfLegs, String sound) 
     {
-        super(gender, amountOfLegs, sound);
+        super(gender, amountOfLegs);
         this.sound = sound;
     }
 
     @Override
     public void makeSound() 
     {
-         
+         System.out.println(sound);
     }
     
 }
