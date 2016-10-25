@@ -11,6 +11,13 @@ package gitblackboardcopy;
  */
 public class Lion extends Animal
 {
+    private String sound;
+
+    public Lion(String gender, int amountOfLegs, String sound) 
+    {
+        super(gender, amountOfLegs, sound);
+        this.sound = sound;
+    }
 
     @Override
     public void makeSound() 
