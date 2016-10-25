@@ -11,5 +11,5 @@ package gitblackboardcopy;
  */
 public class Bear extends Animal
 {
-    //HEJ
+   
 }
