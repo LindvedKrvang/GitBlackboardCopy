@@ -11,6 +11,7 @@ package gitblackboardcopy;
  */
 public class Bear extends Animal
 {
+<<<<<<< HEAD
 
     @Override
     public void makeSound() 
@@ -18,4 +19,7 @@ public class Bear extends Animal
         
     }
     
+=======
+   
+>>>>>>> refs/remotes/origin/master
 }
