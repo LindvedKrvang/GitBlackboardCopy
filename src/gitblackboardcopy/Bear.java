@@ -11,16 +11,19 @@ package gitblackboardcopy;
  */
 public class Bear extends Animal
 {
-
-    public Bear(String gender, int amountOfLegs, String sound) {
-        super(gender, amountOfLegs, sound);
+    private String sound;
+    
+    public Bear(String gender, int amountOfLegs, String sound) 
+    {
+        super(gender, amountOfLegs);
+        this.sound = sound;
     }
 
 
     @Override
     public void makeSound() 
     {
-        
+        System.out.println(sound);
     }
 
 }

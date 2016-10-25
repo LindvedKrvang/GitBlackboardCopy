@@ -20,10 +20,18 @@ public class Zoo
     
     public void allAnimalsMakeSound()
     {
-        
+        for(Animal am : animalList)
+        {
+            am.makeSound();
+        }
     }
     
-    public int getNumberOfLegs()
+    public List<Animal> getAnimalList()
+    {
+        return animalList;
+    }
+    
+    public int countLegs()
     {
         int numberOfLegs = 0;
         
@@ -33,5 +41,32 @@ public class Zoo
         }
         
         return numberOfLegs;
+    }
+    
+    public String getNumberOfGender(String gender)
+    {
+        int amountOfMaleGender = 0;
+        int amountOfFemaleGender = 0;
+        
+        for(Animal am : animalList)
+        {
+            if(am.getGender().equals("male"))
+            {
+                amountOfMaleGender++;
+            }
+            
+            if(am.getGender().equals("female"))
+            {
+                amountOfFemaleGender++;
+            }
+        }
+        if(gender.equals("male"))
+        {
+            return "There is " + amountOfMaleGender + " male animals.";
+        }
+        else
+        {
+            return "There is " + amountOfFemaleGender + " female animals.";
+        }
     }
 }
