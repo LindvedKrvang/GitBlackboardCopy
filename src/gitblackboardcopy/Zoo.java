@@ -25,6 +25,13 @@ public class Zoo
     
     public int getNumberOfLegs()
     {
+        int numberOfLegs = 0;
         
+        for(Animal al : animalList)
+        {
+            numberOfLegs += 4;
+        }
+        
+        return numberOfLegs;
     }
 }

@@ -11,7 +11,15 @@ package gitblackboardcopy;
  */
 public abstract class Animal 
 {
-    public int amountOfLegs;
-    public String gender;
-    //Test
+    private int amountOfLegs;
+    private String gender;
+    
+    public Animal(String gender, int amountOfLegs, String sound)
+    {
+        this.gender = gender;
+        this.amountOfLegs = amountOfLegs;
+        
+    }
+    
+    public abstract void makeSound();
 }

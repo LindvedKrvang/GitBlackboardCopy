@@ -11,5 +11,12 @@ package gitblackboardcopy;
  */
 public class Bear extends Animal
 {
-   
+
+
+    @Override
+    public void makeSound() 
+    {
+        
+    }
+
 }
