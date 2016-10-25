@@ -12,6 +12,10 @@ package gitblackboardcopy;
 public class Bear extends Animal
 {
 
+    public Bear(String gender, int amountOfLegs, String sound) {
+        super(gender, amountOfLegs, sound);
+    }
+
 
     @Override
     public void makeSound() 
